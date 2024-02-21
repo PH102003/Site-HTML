@@ -5,31 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<h1>
-Titulo
-</h1>
-<h2>
-Subtitulo
-</h2>
-<body>
-    
-    <p style="color:rebeccapurple;"><b>A purple paragraph</b></p>
-    
-    <a href="https://www.youtube.com/">Link youtube</a>
-    
-    <script>
-
-        var idade = window.prompt('Qual sua idade? ')
-        if(idade >= 25){
-            document.write('Você é velho')
-        }else
-        document.write('Você é novo')
-            
-        //println do js
+    <style>
         
+        /*adicionando fonte Arial */
+       body {
+            font-family: Arial, sans-serif; /* Definindo a fonte para Arial */
+        }
+        /*adicionando borrão no fundo*/
+        body.blur {
+            filter: blur(5px);
+        }
 
+        /* Adicionando de estilo aos parágrafos */
+        p {
+            color: rebeccapurple;
+            font-size: 18px;
+        }
 
+        /* Estilizando os links */
+        a {
+            text-decoration: none;
+            color: #eb1f1f;
+            border-bottom: 1px solid #eb1f1f;
+        }
+
+        /* Adicionando estilo aos botões */
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Adicionando animação simples aos botões */
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <h2>Subtitulo</h2>
+
+    <p><b>A purple paragraph</b></p>
+
+    <a href="https://www.youtube.com/">Link youtube</a>
+
+    <script>
+        var idade = window.prompt('Qual sua idade? ')
+        if(idade < 18){
+            setTimeout(function() {
+                alert('O site fechará porque você é menor de idade!');
+                close();
+            }, 10)
+
+            // adicionando a classe "blur" ao body para aplicar o efeito de fundo borrado
+            document.body.classList.add('blur');}
+        // Adicionando um botão e uma animação simples ao clicar
+        function mostrarMensagem() {
+            alert('Botão clicado!');
+        }
     </script>
+
+    <!-- Adicionando um botão no corpo do documento -->
+    <button onclick="mostrarMensagem()">Clique-me</button>
+
 </body>
 </html>
