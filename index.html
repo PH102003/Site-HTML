@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1,h2{
-        color:sienna
-        }        
-        /*adicionando fonte Arial */
-       body {    
-        font-family: Arial, sans-serif; /* Definindo a fonte para Arial */
+        h1,
+        h2 {
+            color: sienna
         }
+
+        /*adicionando fonte Arial */
+        body {
+            font-family: Arial, sans-serif;
+            /* Definindo a fonte para Arial */
+        }
+
         /*adicionando borrão no fundo*/
         body.blur {
             filter: blur(5px);
@@ -46,31 +51,51 @@
             background-color: #45a049;
         }
     </style>
+    
+    
+    
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <style>
-     body{
-        background-color: black;
-     }   
+        /*body {
+            background-color: black;
+        }
+        */
     </style>
     <h1>
         Titulo
-        </h1>
+    </h1>
     <h2>Armas</h2>
-    <img alt="Gatling laser" src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928" decoding="async" loading="lazy" width="80" height="35" data-image-name="Fo1 Gatling Laser.png" data-image-key="Fo1_Gatling_Laser.png" data-relevant="0" data-src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928">
-        <p><b>A purple paragraph</b></p>
+    <table>
+
+        <tr>
+        
+
+
+                <th> <img alt="Gatling laser"
+                    src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928"
+                    decoding="async" loading="lazy" width="80" height="35" data-image-name="Fo1 Gatling Laser.png"
+                    data-image-key="Fo1_Gatling_Laser.png" data-relevant="0"
+                    data-src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928"> </th>
+        
+        </tr>
+    </table>
+    <p><b>A purple paragraph</b></p>
     <hr />
-    <a href="https://www.youtube.com/"target="_blank">Link youtube</a>
+    <a href="https://www.youtube.com/" target="_blank">Link youtube</a>
     <script>
         var idade = window.prompt('Qual sua idade? ')
-        if(idade < 18){
-            setTimeout(function() {
+        if (idade < 18) {
+            setTimeout(function () {
                 alert('O site fechará porque você é menor de idade!');
                 close();
             }, 10)
 
             // adicionando a classe "blur" ao body para aplicar o efeito de fundo borrado
-            document.body.classList.add('blur');}
+            document.body.classList.add('blur');
+        }
         // Adicionando um botão e uma animação simples ao clicar
         function mostrarMensagem() {
             alert('Botão clicado!');
@@ -81,4 +106,5 @@
     <button onclick="mostrarMensagem()">Clique-me</button>
 
 </body>
+
 </html>
