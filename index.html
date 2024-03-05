@@ -2,21 +2,32 @@
 <html lang="en">
 
 <head>
+    <title>Site de Pedro</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*dando cor */
         h1,
         h2 {
-            color: sienna
+            color: rgb(153, 9, 9)
         }
 
         /*adicionando fonte Arial */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Monofonto', monospace;
             /* Definindo a fonte para Arial */
         }
+        /*importação da fonte 'monofonto' de Fallout: NV*/
+        @font-face {
+            font-family: 'Monofonto';
+            src: url(c:\Users\pedro\Downloads\monofonto\monofontorg.otf) format('otf');
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+
 
         /*adicionando borrão no fundo*/
         body.blur {
@@ -64,28 +75,38 @@
         }
         */
     </style>
+    
     <h1>
-        Titulo
+        <strong>
+            Titulo
+        </strong>
+    
     </h1>
-    <h2>Armas</h2>
+    <h2>Weapons</h2>
     <table>
-
+        
         <tr>
-        
-
-
-                <th> <img alt="Gatling laser"
-                    src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928"
-                    decoding="async" loading="lazy" width="80" height="35" data-image-name="Fo1 Gatling Laser.png"
-                    data-image-key="Fo1_Gatling_Laser.png" data-relevant="0"
-                    data-src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928"> </th>
-        
+          <th>
+            <img
+              alt="Gatling laser"
+              src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928"
+              decoding="async"
+              loading="lazy"
+              width="80"
+              height="35"
+              data-image-name="Fo1 Gatling Laser.png"
+              data-image-key="Fo1_Gatling_Laser.png"
+              data-relevant="0"
+              data-src="https://static.wikia.nocookie.net/fallout/images/3/3b/Fo1_Gatling_Laser.png/revision/latest/scale-to-width-down/80?cb=20110308165928"
+            />
+          </th>
         </tr>
-    </table>
+        <td><b>Gatling Laser</b></t>
+      </table>
+      
     
     <p><b>A purple paragraph</b></p>
     
-    <
     <a href="https://www.youtube.com/" target="_blank">Link youtube</a>
     <script>
         //<b> é tag pra negrito
